@@ -1,0 +1,29 @@
+<html>
+    <body>
+        <table>
+            <tr>
+                <td>id</td>
+                <td>titulo</td>
+                <td>descricao</td>
+                <td>preco</td>
+                <td></td>
+            </tr>
+
+            <% for(var i=0; i<lista.length; i++) { %>
+                <form action="/produtos/form" method="post">
+                    <tr>
+                        <td><%= lista[i].id %></td>
+                        <td><%= lista[i].titulo %></td>
+                        <td><%= lista[i].descricao %></td>
+                        <td><%= lista[i].preco %></td>
+                        <td>
+                            <input type="hidden" name="id" value="<%= lista[i].id %>" >
+                            <input type="submit" value="Apagar" />
+                        </td>
+                    </tr>
+                </form>
+            <% } %>
+            
+        </table>
+    </body>
+</html>

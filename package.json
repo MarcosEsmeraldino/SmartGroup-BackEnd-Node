@@ -1,0 +1,24 @@
+{
+  "name": "SmartGroup-BackEnd-Node",
+  "version": "1.0.0",
+  "description": "Back-End em Node.js de projeto SmartGroup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "marcos",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "express-load": "^1.1.16",
+    "express-validator": "^5.3.1",
+    "mysql": "^2.16.0",
+    "socket.io": "^2.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "supertest": "^3.3.0"
+  }
+}
